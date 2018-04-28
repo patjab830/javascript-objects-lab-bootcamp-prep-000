@@ -25,4 +25,4 @@ function deleteFromObjectByKey(object, key) {
 }
 
 // returns object withoutthe delete key/value pair
-// 
+// modifies the original object:
