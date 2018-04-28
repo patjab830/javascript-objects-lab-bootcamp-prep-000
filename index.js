@@ -5,7 +5,7 @@ var recipes = new Object();
 // It does not modify the original object, but rather returns a clone with the 
 // new data
 function updateObjectWithKeyAndValue(object, key, value) {
-  var tempObject = 
+  var tempObject = {};
   tempObject[key] = value;
   return Object.assign(object, tempObject);
 }
