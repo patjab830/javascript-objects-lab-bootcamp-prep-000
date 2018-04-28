@@ -5,11 +5,9 @@ var recipes = new Object();
 // It does not modify the original object, but rather returns a clone with the 
 // new data
 function updateObjectWithKeyAndValue(object, key, value) {
-  var tempObject = object;
-  tempObject[key] = value;
-  var result = {};
-  Object.assign(result, tempObject);
-  return result;
+  var newObject = Object.assign({}, object);
+  newObject[key] = value;
+  return newObject;
 }
 
 // updates `object` with the given `key` and `value` (it is destructive) and 
