@@ -8,4 +8,6 @@ function updateObjectWithKeyAndValue(object, key, value) {
   return Object.assign(object, tempObject);
 }
 
-//
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  
+}
